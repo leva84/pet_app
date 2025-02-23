@@ -1,0 +1,43 @@
+AllCops:
+  TargetRubyVersion: 3.3.6
+  NewCops: enable
+  SuggestExtensions: false
+  Exclude:
+    - 'bin/**/*'
+    - 'db/migrate/*'
+    - 'db/schema.rb'
+    - 'tmp/**'
+
+# Layout
+Layout/LineLength:
+  Max: 120
+Layout/SpaceInsideStringInterpolation:
+  Enabled: false
+
+# Metrics
+Metrics/AbcSize:
+  Enabled: false
+Metrics/BlockLength:
+  Max: 30
+  Exclude:
+    - 'spec/**/*'
+Metrics/ClassLength:
+  Max: 180
+Metrics/CyclomaticComplexity:
+  Max: 15
+Metrics/MethodLength:
+  Max: 30
+Metrics/PerceivedComplexity:
+  Max: 15
+
+# Naming
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+
+# Style
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/HashSyntax:
+  Enabled: false
